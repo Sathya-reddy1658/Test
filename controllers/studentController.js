@@ -21,7 +21,7 @@ export const newEntry = (req, res, next) => {
     }
 
     if (!id || !name || !room || !floor) {
-        res.status(400).json({ eroor: " missing fields" });
+        res.status(400).json({ error: " missing fields" });
         return;
   }
   

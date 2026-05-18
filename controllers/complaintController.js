@@ -5,12 +5,7 @@ export const allComplaints = (req, res, next) => {
 }
 
 export const newComplaint = (req, res, next) => {
-    let { roomId, complaint } = req.body;
-    let newComp = {
-        roomId: roomId,
-        complaint : complaint
-    }
-
+    let newComp = req.complaint;
     complaints.push(newComp);
     res.json(newComp);
 }
